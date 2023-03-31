@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "dotenv -e .env.development next dev",
+    "build": "dotenv -e .env.production next build",
+    "start": "dotenv -e .env.production next start",
     "lint": "next lint",
     "build:dev": "dotenv -e .env.development next build"
   },
@@ -21,6 +21,6 @@
     "typescript": "5.0.2"
   },
   "devDependencies": {
-    "dotenv": "^16.0.3"
+    "dotenv-cli": "^7.1.0"
   }
 }
