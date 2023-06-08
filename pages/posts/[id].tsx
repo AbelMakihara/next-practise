@@ -48,7 +48,7 @@ const Post = (props: any) => {
   };
   return (
     <>
-      <div onClick={queryContent}>get</div>
+      <div onClick={queryContent}>queryContent</div>
       <p>Post: {props.id}</p>
       <p>Content: {post}</p>
     </>
